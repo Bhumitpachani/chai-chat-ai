@@ -294,3 +294,15 @@ function Bubble({ msg, companion }: { msg: Msg; companion: string }) {
     </div>
   );
 }
+
+function ChatTopBar() {
+  return (
+    <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <Link to="/" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-2 text-xs font-medium backdrop-blur hover:bg-card">
+        <ArrowLeft className="h-3.5 w-3.5" /> Home
+      </Link>
+      <Logo className="h-8 w-auto" />
+      <div className="w-[76px]" />
+    </div>
+  );
+}
