@@ -12,6 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Enable nitro for non-sandbox production builds (Vercel, etc.).
+  // Preset is read from NITRO_PRESET env var at build time (default: cloudflare-module).
+  nitro: true,
   vite: {
     server: {
       port: 5000,

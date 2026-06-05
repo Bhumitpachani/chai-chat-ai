@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-const SARVAM_KEY = "sk_1gd474km_04AHAkEKPEAQAOkv90gSRBOu";
+const SARVAM_KEY = process.env.SARVAM_KEY ?? "sk_1gd474km_04AHAkEKPEAQAOkv90gSRBOu";
 
 const MessageSchema = z.object({
   role: z.enum(["user", "assistant", "system"]),
