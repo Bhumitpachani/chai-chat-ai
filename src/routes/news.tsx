@@ -28,21 +28,21 @@ function News() {
     <>
       <Backdrop />
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-5 py-16 md:py-24">
-        <p className="text-sm uppercase tracking-widest text-primary">News</p>
-        <h1 className="mt-3 font-display text-4xl font-semibold md:text-6xl">
+      <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 md:py-24">
+        <p className="text-xs uppercase tracking-widest text-primary sm:text-sm">News</p>
+        <h1 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
           What's <span className="text-gradient">new</span>.
         </h1>
 
-        <div className="mt-12 space-y-5">
+        <div className="mt-10 space-y-4 md:mt-12 md:space-y-5">
           {ITEMS.map((n) => (
             <article key={n.title} className="card-3d flex flex-col gap-4 p-5 sm:flex-row sm:gap-5 sm:p-6">
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl btn-hero">
-                <Newspaper className="h-5 w-5" />
+              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl btn-hero sm:h-11 sm:w-11">
+                <Newspaper className="h-4 w-4 sm:h-5 sm:w-5" />
               </div>
               <div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{n.date}</div>
-                <h2 className="mt-1 font-display text-xl font-semibold">{n.title}</h2>
+                <h2 className="mt-1 font-display text-lg font-semibold sm:text-xl">{n.title}</h2>
                 <p className="mt-2 text-sm text-muted-foreground">{n.body}</p>
               </div>
             </article>

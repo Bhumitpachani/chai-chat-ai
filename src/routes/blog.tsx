@@ -30,22 +30,22 @@ function Blog() {
     <>
       <Backdrop />
       <SiteHeader />
-      <main className="mx-auto max-w-6xl px-5 py-16 md:py-24">
-        <p className="text-sm uppercase tracking-widest text-primary">Blog</p>
-        <h1 className="mt-3 font-display text-4xl font-semibold md:text-6xl">
+      <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 md:py-24">
+        <p className="text-xs uppercase tracking-widest text-primary sm:text-sm">Blog</p>
+        <h1 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
           Notes on <span className="text-gradient">talking, listening</span> & being heard.
         </h1>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 md:gap-5 lg:grid-cols-3">
           {POSTS.map((p) => (
-            <article key={p.title} className="card-3d flex flex-col p-6">
+            <article key={p.title} className="card-3d flex flex-col p-5 sm:p-6">
               <span className="inline-flex w-fit rounded-full bg-primary/15 px-3 py-1 text-xs font-medium text-primary">
                 {p.tag}
               </span>
-              <h2 className="mt-4 font-display text-xl font-semibold leading-snug">{p.title}</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{p.excerpt}</p>
-              <div className="mt-6 flex items-center gap-2 text-xs text-muted-foreground">
-                <Clock className="h-3.5 w-3.5" /> {p.date}
+              <h2 className="mt-4 font-display text-lg font-semibold leading-snug sm:text-xl">{p.title}</h2>
+              <p className="mt-2 flex-1 text-sm text-muted-foreground">{p.excerpt}</p>
+              <div className="mt-5 flex items-center gap-2 text-xs text-muted-foreground sm:mt-6">
+                <Clock className="h-3.5 w-3.5 shrink-0" /> {p.date}
               </div>
             </article>
           ))}
