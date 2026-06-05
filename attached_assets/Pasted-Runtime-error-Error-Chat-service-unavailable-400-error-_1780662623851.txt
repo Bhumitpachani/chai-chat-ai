@@ -1,0 +1,12 @@
+Runtime error
+
+Error: Chat service unavailable (400): {"error":{"message":"body.reasoning_effort : Input should be 'low', 'medium' or 'high'","code":"invalid_request_error","request_id":"20260605_0520bbd1-a8d4-4033-9c5d-154debf320a2"}}
+{
+  "timestamp": 1780662424092,
+  "error_type": "RUNTIME_ERROR",
+  "filename": "https://localhost:8080/_serverFn/eyJmaWxlIjoiL3NyYy9saWIvY2hhdC5mdW5jdGlvbnMudHM_dHNzLXNlcnZlcmZuLXNwbGl0IiwiZXhwb3J0Ijoic2VuZENoYXRfY3JlYXRlU2VydmVyRm5faGFuZGxlciJ9",
+  "lineno": 0,
+  "colno": 0,
+  "stack": "Error: Chat service unavailable (400): {\"error\":{\"message\":\"body.reasoning_effort : Input should be 'low', 'medium' or 'high'\",\"code\":\"invalid_request_error\",\"request_id\":\"20260605_0520bbd1-a8d4-4033-9c5d-154debf320a2\"}}\n    at Object.eval (/dev-server/src/lib/chat.functions.ts:40:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async server (/dev-server/node_modules/@tanstack/start-client-core/src/createServerFn.ts:803:24)\n    at async callNextMiddleware (/dev-server/node_modules/@tanstack/start-client-core/src/createServerFn.ts:288:24)\n    at async AsyncFunction.__executeServer (/dev-server/node_modules/@tanstack/start-client-core/src/createServerFn.ts:170:28)\n    at async eval (/dev-server/node_modules/@tanstack/start-server-core/src/server-functions-handler.ts:159:16)\n    at async eval (/dev-server/node_modules/@tanstack/start-server-core/src/server-functions-handler.ts:81:17)\n    at async handleServerAction (/dev-server/node_modules/@tanstack/start-server-core/src/server-functions-handler.ts:79:20)\n    at async next (/dev-server/node_modules/@tanstack/start-server-core/src/createStartHandler.ts:379:16)\n    at async eval (/dev-server/src/start.ts:7:12)\n    at async next (/dev-server/node_modules/@tanstack/start-server-core/src/createStartHandler.ts:379:16)\n    at async startRequestResolver (/dev-server/node_modules/@tanstack/start-server-core/src/createStartHandler.ts:662:21)\n    at async Object.fetch (/dev-server/node_modules/@tanstack/react-start/src/default-entry/server.ts:16:14)\n    at async Object.fetch (/dev-server/src/server.ts:44:24)\n    at async file:///dev-server/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:71:36",
+  "has_blank_screen": true
+}
