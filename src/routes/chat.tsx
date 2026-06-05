@@ -199,8 +199,8 @@ function ChatRoom({ userName, companion }: { userName: string; companion: string
   return (
     <>
       <Backdrop />
-      <ChatTopBar />
-      <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-2xl flex-col px-5 py-6">
+      <main className="mx-auto flex min-h-screen max-w-2xl flex-col px-3 py-4 sm:px-5 sm:py-6">
+
         <div className="card-3d flex flex-1 flex-col overflow-hidden p-0">
           {/* Chat header */}
           <div className="flex items-center justify-between border-b border-border px-5 py-4">
