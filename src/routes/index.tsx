@@ -42,7 +42,7 @@ function Home() {
                 <Sparkles className="h-3.5 w-3.5 text-accent" />
                 India's friendliest chat space
               </div>
-              <h1 className="font-display text-5xl font-bold leading-[1.05] md:text-7xl">
+              <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-7xl">
                 Meet someone <span className="text-gradient">new</span>.
                 <br /> Chat like <span className="text-gradient">old friends</span>.
               </h1>
@@ -199,7 +199,7 @@ function Home() {
 
         {/* TRUST */}
         <section className="py-10">
-          <div className="card-3d grid items-center gap-6 p-8 md:grid-cols-[auto_1fr_auto]">
+          <div className="card-3d grid items-center gap-5 p-6 sm:p-8 md:grid-cols-[auto_1fr_auto]">
             <div className="grid h-14 w-14 place-items-center rounded-2xl btn-hero">
               <Lock className="h-6 w-6" />
             </div>
@@ -209,15 +209,15 @@ function Home() {
                 No phone numbers. No accounts. No tracking across the web. Just chat — and leave when you want.
               </p>
             </div>
-            <Link to="/about" className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-card">
+            <Link to="/about" className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium hover:bg-card md:w-auto">
               Learn more <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="my-24">
-          <div className="card-3d relative overflow-hidden p-10 text-center md:p-20">
+        <section className="my-16 md:my-24">
+          <div className="card-3d relative overflow-hidden p-8 text-center sm:p-10 md:p-20">
             <div className="absolute -top-20 left-1/2 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-gradient-to-br from-primary/40 to-accent/40 blur-3xl" />
             <Logo className="mx-auto h-12 w-auto" />
             <h2 className="mt-6 font-display text-3xl font-bold md:text-5xl">

@@ -31,7 +31,7 @@ export const sendChat = createServerFn({ method: "POST" })
         temperature: 0.8,
         top_p: 1,
         max_tokens: 400,
-        reasoning_effort: "no_think",
+        reasoning_effort: "low",
       }),
     });
 

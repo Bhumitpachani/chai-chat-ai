@@ -36,7 +36,7 @@ function News() {
 
         <div className="mt-12 space-y-5">
           {ITEMS.map((n) => (
-            <article key={n.title} className="card-3d flex gap-5 p-6">
+            <article key={n.title} className="card-3d flex flex-col gap-4 p-5 sm:flex-row sm:gap-5 sm:p-6">
               <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl btn-hero">
                 <Newspaper className="h-5 w-5" />
               </div>
