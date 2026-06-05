@@ -7,10 +7,10 @@ import { Newspaper } from "lucide-react";
 export const Route = createFileRoute("/news")({
   head: () => ({
     meta: [
-      { title: "News — SakhiConnect" },
-      { name: "description", content: "Updates, releases and announcements from the SakhiConnect team." },
-      { property: "og:title", content: "News — SakhiConnect" },
-      { property: "og:description", content: "Updates and announcements from SakhiConnect." },
+      { title: "News — ChatMingle" },
+      { name: "description", content: "Updates, releases and announcements from the ChatMingle team." },
+      { property: "og:title", content: "News — ChatMingle" },
+      { property: "og:description", content: "Updates and announcements from ChatMingle." },
     ],
   }),
   component: News,

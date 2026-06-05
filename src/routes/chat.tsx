@@ -11,7 +11,7 @@ import { Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/chat")({
   head: () => ({
     meta: [
-      { title: "Chat — SakhiConnect" },
+      { title: "Chat — ChatMingle" },
       { name: "description", content: "Start your conversation. Meet a new companion and chat freely." },
     ],
   }),
