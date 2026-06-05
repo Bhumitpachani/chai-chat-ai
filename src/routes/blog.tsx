@@ -7,9 +7,9 @@ import { Clock } from "lucide-react";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Blog — SakhiConnect" },
+      { title: "Blog — ChatMingle" },
       { name: "description", content: "Stories, tips and reflections about conversations, friendship and connection." },
-      { property: "og:title", content: "Blog — SakhiConnect" },
+      { property: "og:title", content: "Blog — ChatMingle" },
       { property: "og:description", content: "Stories about conversations and connection." },
     ],
   }),

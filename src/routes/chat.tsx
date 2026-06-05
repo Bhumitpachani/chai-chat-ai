@@ -1,16 +1,17 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Backdrop } from "@/components/Backdrop";
+import { Logo } from "@/components/Logo";
 import { sendChat } from "@/lib/chat.functions";
 import { pickUniqueGirlName } from "@/lib/girlNames";
-import { Heart, Send, LogOut, Sparkles, ArrowRight } from "lucide-react";
+import { Heart, Send, LogOut, Sparkles, ArrowRight, ArrowLeft } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/chat")({
   head: () => ({
     meta: [
-      { title: "Chat — SakhiConnect" },
+      { title: "Chat — ChatMingle" },
       { name: "description", content: "Start your conversation. Meet a new companion and chat freely." },
     ],
   }),
@@ -71,7 +72,7 @@ function NameStage({ initial, onSubmit }: { initial: string; onSubmit: (n: strin
   return (
     <>
       <Backdrop />
-      <SiteHeader />
+      <ChatTopBar />
       <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-md items-center px-5">
         <div className="card-3d w-full p-8">
           <div className="grid h-14 w-14 place-items-center rounded-2xl btn-hero">
@@ -134,7 +135,7 @@ function MatchingStage({ userName, onReady }: { userName: string; onReady: (name
   return (
     <>
       <Backdrop />
-      <SiteHeader />
+      <ChatTopBar />
       <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-md items-center px-5">
         <div className="card-3d w-full p-8 text-center">
           <div className="mx-auto grid h-16 w-16 place-items-center rounded-full btn-hero animate-float">
@@ -198,8 +199,8 @@ function ChatRoom({ userName, companion }: { userName: string; companion: string
   return (
     <>
       <Backdrop />
-      <SiteHeader />
-      <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-2xl flex-col px-5 py-6">
+      <main className="mx-auto flex min-h-screen max-w-2xl flex-col px-3 py-4 sm:px-5 sm:py-6">
+
         <div className="card-3d flex flex-1 flex-col overflow-hidden p-0">
           {/* Chat header */}
           <div className="flex items-center justify-between border-b border-border px-5 py-4">
@@ -290,6 +291,18 @@ function Bubble({ msg, companion }: { msg: Msg; companion: string }) {
       <div className="max-w-[78%] whitespace-pre-wrap rounded-2xl rounded-bl-sm bg-muted px-4 py-2.5 text-sm">
         {msg.content}
       </div>
+    </div>
+  );
+}
+
+function ChatTopBar() {
+  return (
+    <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <Link to="/" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-2 text-xs font-medium backdrop-blur hover:bg-card">
+        <ArrowLeft className="h-3.5 w-3.5" /> Home
+      </Link>
+      <Logo className="h-8 w-auto" />
+      <div className="w-[76px]" />
     </div>
   );
 }

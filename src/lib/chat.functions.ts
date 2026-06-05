@@ -26,11 +26,12 @@ export const sendChat = createServerFn({ method: "POST" })
         "api-subscription-key": SARVAM_KEY,
       },
       body: JSON.stringify({
-        model: "sarvam-m",
+        model: "sarvam-105b",
         messages: [{ role: "system", content: systemPrompt }, ...data.messages],
         temperature: 0.8,
         top_p: 1,
         max_tokens: 400,
+        reasoning_effort: "no_think",
       }),
     });
 

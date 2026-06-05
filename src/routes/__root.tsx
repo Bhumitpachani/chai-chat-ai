@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SakhiConnect — Chat & Connect" },
+      { title: "ChatMingle — Chat & Connect" },
       { name: "description", content: "A warm space to chat, share and connect with friendly companions from across India." },
-      { property: "og:title", content: "SakhiConnect — Chat & Connect" },
+      { property: "og:title", content: "ChatMingle — Chat & Connect" },
       { property: "og:description", content: "A warm space to chat, share and connect with friendly companions from across India." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

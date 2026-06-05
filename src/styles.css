@@ -49,26 +49,26 @@
 
 :root {
   --radius: 1rem;
-  /* Romantic neon-dusk */
-  --background: oklch(0.16 0.03 320);
-  --foreground: oklch(0.97 0.01 320);
-  --card: oklch(0.21 0.04 320);
-  --card-foreground: oklch(0.97 0.01 320);
-  --popover: oklch(0.21 0.04 320);
-  --popover-foreground: oklch(0.97 0.01 320);
-  --primary: oklch(0.72 0.22 350);          /* hot pink */
-  --primary-foreground: oklch(0.15 0.02 320);
-  --secondary: oklch(0.28 0.05 320);
-  --secondary-foreground: oklch(0.97 0.01 320);
-  --muted: oklch(0.26 0.04 320);
-  --muted-foreground: oklch(0.72 0.04 320);
-  --accent: oklch(0.72 0.19 295);           /* violet */
-  --accent-foreground: oklch(0.15 0.02 320);
+  /* ChatMingle: bright, friendly — blue → pink gradient on soft white */
+  --background: oklch(0.985 0.005 280);
+  --foreground: oklch(0.18 0.04 270);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.04 270);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.04 270);
+  --primary: oklch(0.62 0.22 260);          /* ChatMingle blue */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.02 290);
+  --secondary-foreground: oklch(0.22 0.05 270);
+  --muted: oklch(0.95 0.015 290);
+  --muted-foreground: oklch(0.48 0.04 280);
+  --accent: oklch(0.68 0.25 0);             /* ChatMingle pink */
+  --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.62 0.24 25);
-  --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.32 0.05 320 / 0.6);
-  --input: oklch(0.28 0.05 320);
-  --ring: oklch(0.72 0.22 350);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.02 290 / 0.8);
+  --input: oklch(0.97 0.01 290);
+  --ring: oklch(0.62 0.22 260);
 }
 
 .dark { color-scheme: dark; }

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Logo } from "./Logo";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -14,14 +15,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full">
       <div className="glass">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="grid h-9 w-9 place-items-center rounded-xl btn-hero">
-              <Heart className="h-5 w-5" />
-            </div>
-            <span className="font-display text-lg font-semibold tracking-tight">
-              Sakhi<span className="text-gradient">Connect</span>
-            </span>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+          <Link to="/" className="flex items-center gap-2">
+            <Logo className="h-9 w-auto md:h-10" />
           </Link>
 
           <nav className="hidden items-center gap-7 md:flex">

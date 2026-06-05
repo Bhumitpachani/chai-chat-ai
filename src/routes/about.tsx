@@ -7,10 +7,10 @@ import { Heart, Sparkles, Users, Shield } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — SakhiConnect" },
-      { name: "description", content: "Why SakhiConnect exists, how matching works and what makes the conversations special." },
-      { property: "og:title", content: "About — SakhiConnect" },
-      { property: "og:description", content: "Why SakhiConnect exists and how it works." },
+      { title: "About — ChatMingle" },
+      { name: "description", content: "Why ChatMingle exists, how matching works and what makes the conversations special." },
+      { property: "og:title", content: "About — ChatMingle" },
+      { property: "og:description", content: "Why ChatMingle exists and how it works." },
     ],
   }),
   component: About,
@@ -27,7 +27,7 @@ function About() {
           Built for the <span className="text-gradient">moments in between</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          SakhiConnect started with a simple idea — sometimes you just want to talk to someone friendly without the awkwardness of starting from scratch. We make that first hello easy.
+          ChatMingle started with a simple idea — sometimes you just want to talk to someone friendly without the awkwardness of starting from scratch. We make that first hello easy.
         </p>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
