@@ -1,11 +1,12 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Backdrop } from "@/components/Backdrop";
+import { Logo } from "@/components/Logo";
 import { sendChat } from "@/lib/chat.functions";
 import { pickUniqueGirlName } from "@/lib/girlNames";
-import { Heart, Send, LogOut, Sparkles, ArrowRight } from "lucide-react";
+import { Heart, Send, LogOut, Sparkles, ArrowRight, ArrowLeft } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/chat")({
   head: () => ({
