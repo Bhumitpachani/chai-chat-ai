@@ -72,7 +72,7 @@ function NameStage({ initial, onSubmit }: { initial: string; onSubmit: (n: strin
   return (
     <>
       <Backdrop />
-      <SiteHeader />
+      <ChatTopBar />
       <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-md items-center px-5">
         <div className="card-3d w-full p-8">
           <div className="grid h-14 w-14 place-items-center rounded-2xl btn-hero">
@@ -135,7 +135,7 @@ function MatchingStage({ userName, onReady }: { userName: string; onReady: (name
   return (
     <>
       <Backdrop />
-      <SiteHeader />
+      <ChatTopBar />
       <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-md items-center px-5">
         <div className="card-3d w-full p-8 text-center">
           <div className="mx-auto grid h-16 w-16 place-items-center rounded-full btn-hero animate-float">
@@ -199,7 +199,7 @@ function ChatRoom({ userName, companion }: { userName: string; companion: string
   return (
     <>
       <Backdrop />
-      <SiteHeader />
+      <ChatTopBar />
       <main className="mx-auto flex min-h-[calc(100vh-100px)] max-w-2xl flex-col px-5 py-6">
         <div className="card-3d flex flex-1 flex-col overflow-hidden p-0">
           {/* Chat header */}
